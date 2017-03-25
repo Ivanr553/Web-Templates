@@ -1,3 +1,4 @@
+//LINKS
 function yelp() {
   window.open("https://www.yelp.com/biz/tokiwa-sushi-moorpark-3");
 }
@@ -10,8 +11,7 @@ function photos() {
   window.open("https://www.yelp.com/biz_photos/tokiwa-sushi-moorpark-3");
 }
 
-
-//taken from internt, edit to make images fade in and out
+//SLIDESHOW FOR IMAGES
 let slideIndex = 0;
 carousel();
 
@@ -27,3 +27,10 @@ function carousel() {
     x[slideIndex-1].style.animation = "fade-in 3700ms forwards";
     setTimeout(carousel, 3500);
 }
+
+//BODY IMAGE CHANGE ON SCROLL
+jQuery(window).scroll(function(){
+  if(jQuery(window).scrollTop() > 500) {
+    jQuery("body").style.backgroundImage = "url('images/food-gallery-dark.jpg')"
+  }
+})

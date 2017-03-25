@@ -20,6 +20,7 @@ body {
   cursor: pointer;
   font-family: "Handwriting";
   font-size: 9vh;
+  animation: dark 250ms forwards;
 }
 .carla {
   float: left;
@@ -32,6 +33,14 @@ body {
     color: rgba(100, 100, 100, 0.85);
   }
 }
+@keyframes dark {
+  0% {
+    color: rgba(100, 100, 100, 0.85);
+  }
+  100% {
+    color: rgba(100, 100, 100, 0.6);
+  }
+}
 #carla-title {
   display: flex;
   flex-direction: column;
@@ -39,6 +48,7 @@ body {
   font-size: 10vh;
   font-weight: 300;
   font-family: "champignon";
+  cursor: default;
 }
 .landing-img {
   background-image: url("images/pic1.jpg");
@@ -62,13 +72,22 @@ body {
   height: 2vw;
   border-radius: 0.3vw;
   opacity: 0.7;
+  animation: hover-anim-light 250ms forwards;
 }
 .bottom-sym:hover {
-  animation: hover-anim 500ms forwards;
+  animation: hover-anim-dark 500ms forwards;
 }
-@keyframes hover-anim {
+@keyframes hover-anim-dark {
   100% {
     opacity: 1;
+  }
+}
+@keyframes hover-anim-light {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.7;
   }
 }
 #fb-sym {

@@ -1,0 +1,59 @@
+@font-face {
+  font-family: "Handwriting";
+  src: url("fonts/Jellyka_Estrya_Handwriting.ttf") format("truetype");
+}
+body, html {
+  padding: 0;
+  margin: 0;
+}
+.nav-bar {
+  height: 32vh;
+  background-color: rgb(46, 47, 48);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: center;
+}
+.nav-btn {
+  padding: 0vh 4vw 1vh 4vw;
+  color: white;
+  font-family: "Handwriting", Arial;
+  font-size: 12vh;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: -0.2vh;
+  border-radius: 0.2vh;
+  animation: light 400ms forwards;
+}
+.nav-btn:hover {
+  color: rgba(170, 170, 170, 0.95);
+  animation: dark 700ms forwards;
+}
+@keyframes dark {
+  100% {
+    background-color: white;
+  }
+}
+@keyframes light {
+  0% {
+    color: rgba(170, 170, 170, 0.95);
+    background-color: white;
+  }
+  100% {
+    color: white;
+    background-color: default;
+  }
+}
+.bar {
+  width: 120%;
+  height: 0.3vh;
+  background-color: grey;
+  margin: auto;
+  margin-top: -2.2vh;
+  margin-bottom: 0.2vh;
+}
