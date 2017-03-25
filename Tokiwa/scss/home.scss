@@ -1,0 +1,220 @@
+@font-face {
+  font-family: "brush";
+  src: url("fonts/Dry-Brush.ttf") format("truetype");
+}
+body, html {
+  margin: 0;
+  border: none;
+  padding: 0;
+  background-image: url("images/b-img.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+header {
+  background-image: url("images/sushi-back-edit.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 110vh;
+  padding: none;
+}
+img {
+  width: 45vw;
+  height: auto;
+}
+.mySlides {
+  display: none;
+}
+@keyframes fade-in{
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+#body-img {
+  height: 40vh;
+  width: auto;
+  margin: auto;
+  margin-right: 0;
+}
+.nav-bar {
+  /*position: fixed;*/
+  top: 0;
+  width: 100vw;
+  height: 7vh;
+  /*background-color: rgba(20, 20, 20, 0.6);*/
+  opacity: 1;
+  padding: 0.5vh;
+}
+.nav-btn {
+  height: 100%;
+  width: 11vw;
+  font-size: 2.7vh;
+  float: right;
+  color: white;
+  opacity: 0.7;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+  margin: 0px 0.2vh 0px 0.2vh;
+  border-radius: 0.5vh;
+}
+.nav-btn:hover {
+  animation: brighten 500ms forwards;
+}
+@keyframes brighten {
+  100% {
+    opacity: 1;
+  }
+}
+.body-div-1 {
+  height: 110vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  box-shadow: inset 0 5px 40px -5px black;
+}
+.bar {
+  width: 60vw;
+  background-color: grey;
+  height: 0.5vh;
+  position: absolute;
+}
+#top-body-bar {
+  top: 27vh;
+}
+#bottom-body-bar {
+  bottom: 22vh;
+}
+.fill {
+  height: 100vh;
+}
+.body-div-2 {
+  height: 120vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  box-shadow: inset 0 5px 30px -8px black;
+}
+.myslides-span {
+  color: black;
+  font-size: 3vmin;
+  font-style: italic;
+}
+.body-div-2-cont {
+  width: 38vw;
+  margin: 0 5vw 0 5vw;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.image-span {
+  font-size: 3vh;
+  color: white;
+  margin-top: 3vh;
+}
+#top-myslides-bar {
+ width: 33vw;
+ top: -6vh;
+}
+#bottom-myslides-bar {
+  width: 33vw;
+  bottom: -6vh;
+}
+.body-bar {
+  width: 100vw;
+  height: 40vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 1;
+  padding: 0.5vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+.span-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  margin: auto;
+  /*margin-left: 5vw;*/
+}
+.body-span {
+  font-size: 6vmax;
+  font-family: "brush";
+}
+.body-p {
+  width: 40vw;
+  font-size: default;
+  margin: 0 auto 0 auto;
+  font-style: italic;
+  opacity: 0.8;
+  font-size: 3vh;
+}
+.review {
+  width: 25vw;
+  height: 15vh;
+  color: white;
+  margin: 5vh;
+  background-color: rgba(244, 10, 10, 0.6);
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0;
+}
+.bottom {
+  text-align: center;
+  color: black;
+  font-size: 3vh;
+  margin: auto;
+  font-style: italic;
+}
+
+#logo {
+  float: left;
+}
+#yelp-btn {
+  margin-right: 2.2vw;
+}
+#bottom-bar {
+  background-color: rgba(249, 249, 249, 0.85);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 5vh;
+  height: 40vh;
+  box-shadow: 0 -5px 40px -15px black;
+/*  border-top: solid 0.5vh rgba(244, 10, 10, 0.6);*/
+}
