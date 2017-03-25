@@ -11,6 +11,10 @@ function photos() {
   window.open("https://www.yelp.com/biz_photos/tokiwa-sushi-moorpark-3");
 }
 
+function addback() {
+  document.getElementById("body").style.background = "red";
+}
+
 //SLIDESHOW FOR IMAGES
 let slideIndex = 0;
 carousel();
@@ -29,8 +33,13 @@ function carousel() {
 }
 
 //BODY IMAGE CHANGE ON SCROLL
-jQuery(window).scroll(function(){
-  if(jQuery(window).scrollTop() > 500) {
-    jQuery("body").style.backgroundImage = "url('images/food-gallery-dark.jpg')"
+$(document).ready( function(){
+  $(window).scroll(function(){
+    let fromTop = document.documentElement.clientHeight*3.25;
+  if(jQuery(window).scrollTop() > fromTop) {
+    document.getElementById("body").style.backgroundImage = "url('scss/images/sushi-wallpaper-2.jpg')"
   }
-})
+  else {
+    document.getElementById("body").style.backgroundImage = "url('scss/images/sushi-wallpaper-1.jpg')"
+  }
+})})

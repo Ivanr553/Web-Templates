@@ -2,11 +2,12 @@
   font-family: "brush";
   src: url("fonts/Dry-Brush.ttf") format("truetype");
 }
+
 body, html {
   margin: 0;
   border: none;
   padding: 0;
-  background-image: url("images/b-img.jpg");
+  background-image: url("images/sushi-wallpaper-1.jpg");
   background-size: cover;
   background-attachment: fixed;
 }
@@ -24,29 +25,6 @@ img {
 }
 .mySlides {
   display: none;
-}
-@keyframes fade-in{
-  0% {
-    opacity: 0;
-  }
-  40% {
-    opacity: 1;
-  }
-  75% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes fade-out {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    display: none;
-  }
 }
 #body-img {
   height: 40vh;
@@ -80,11 +58,6 @@ img {
 }
 .nav-btn:hover {
   animation: brighten 500ms forwards;
-}
-@keyframes brighten {
-  100% {
-    opacity: 1;
-  }
 }
 .body-div-1 {
   height: 110vh;
@@ -181,24 +154,13 @@ img {
   opacity: 0.8;
   font-size: 3vh;
 }
-.review {
-  width: 25vw;
-  height: 15vh;
-  color: white;
-  margin: 5vh;
-  background-color: rgba(244, 10, 10, 0.6);
-  display: flex;
-  text-align: center;
-  flex-direction: column;
-  justify-content: center;
-  opacity: 0;
-}
 .bottom {
   text-align: center;
   color: black;
   font-size: 3vh;
   margin: auto;
   font-style: italic;
+  letter-spacing: .1vh
 }
 
 #logo {
@@ -208,7 +170,7 @@ img {
   margin-right: 2.2vw;
 }
 #bottom-bar {
-  background-color: rgba(249, 249, 249, 0.85);
+  background-color: rgba(249, 249, 249, 0.9);
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -217,4 +179,34 @@ img {
   height: 40vh;
   box-shadow: 0 -5px 40px -15px black;
 /*  border-top: solid 0.5vh rgba(244, 10, 10, 0.6);*/
+}
+
+//animations
+@keyframes fade-in{
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+@keyframes brighten {
+  100% {
+    opacity: 1;
+  }
 }
