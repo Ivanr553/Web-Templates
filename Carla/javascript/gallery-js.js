@@ -7,4 +7,3 @@ function backDrop(element) {
     element.classList.remove("nav-btn-animated");
     element.classList.add("nav-btn-no-anim");
 }
-//also change the color of text ^^^
