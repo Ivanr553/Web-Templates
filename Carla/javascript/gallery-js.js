@@ -1,8 +1,10 @@
 function backDrop(element) {
     let buttons = document.getElementsByClassName("nav-btn");
     for(let i = 0; i < buttons.length; i++) {
-      buttons[i].style.backgroundColor = "rgb(46, 47, 48)";
+      buttons[i].classList.add("nav-btn-animated");
+      buttons[i].classList.remove("nav-btn-no-anim");
     }
-    element.style.backgroundColor = "white";
+    element.classList.remove("nav-btn-animated");
+    element.classList.add("nav-btn-no-anim");
 }
 //also change the color of text ^^^

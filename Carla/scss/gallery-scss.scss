@@ -7,7 +7,7 @@ body, html {
   margin: 0;
 }
 .nav-bar {
-  height: 32vh;
+  height: 30vh;
   background-color: rgb(46, 47, 48);
   display: flex;
   flex-direction: row;
@@ -17,9 +17,8 @@ body, html {
 }
 .nav-btn {
   padding: 0vh 4vw 1vh 4vw;
-  color: white;
   font-family: "Handwriting", Arial;
-  font-size: 12vh;
+  font-size: 6vw;
   cursor: pointer;
   position: relative;
   display: flex;
@@ -28,7 +27,16 @@ body, html {
   align-items: center;
   margin-bottom: -0.2vh;
   border-radius: 0.2vh;
+  color: rgba(170, 170, 170, 0.95);
+  user-select: none;
+}
+.nav-btn-animated {
+  color: white;
+  background-color: default
   animation: light 400ms forwards;
+}
+.nav-btn-no-anim {
+  background-color: white;
 }
 .nav-btn:hover {
   color: rgba(170, 170, 170, 0.95);
@@ -41,11 +49,9 @@ body, html {
 }
 @keyframes light {
   0% {
-    color: rgba(170, 170, 170, 0.95);
     background-color: white;
   }
   100% {
-    color: white;
     background-color: default;
   }
 }
@@ -54,6 +60,6 @@ body, html {
   height: 0.3vh;
   background-color: grey;
   margin: auto;
-  margin-top: -2.2vh;
+  margin-top: -1.9vh;
   margin-bottom: 0.2vh;
 }
