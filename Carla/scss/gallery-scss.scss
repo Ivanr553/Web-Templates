@@ -19,6 +19,25 @@ img {
   justify-content: center;
   align-items: flex-end;
   text-align: center;
+  position: relative;
+}
+#home {
+  padding: 0vh 4vw 1vh 4vw;
+  font-family: "Handwriting", Arial;
+  font-size: 6vw;
+  cursor: pointer;
+  top: 0vh;
+  left: -1vw;
+  position: absolute;
+  color: white;
+}
+#home:hover {
+  animation: home-anim 700ms forwards;
+}
+@keyframes home-anim {
+  100% {
+    color: rgba(200, 200, 200, 1);
+  }
 }
 .nav-btn {
   padding: 0vh 4vw 1vh 4vw;
@@ -37,27 +56,22 @@ img {
 }
 .nav-btn-animated {
   color: white;
-  background-color: default
-  animation: light 400ms forwards;
+  background-color: default;
 }
 .nav-btn-no-anim {
   background-color: white;
 }
 .nav-btn:hover {
-  color: rgba(170, 170, 170, 0.95);
-  animation: dark 700ms forwards;
-}
-@keyframes dark {
-  100% {
-    background-color: white;
-  }
+  color: rgba(100, 100, 100, 0.95);
+  animation: light 900ms forwards;
 }
 @keyframes light {
   0% {
-    background-color: white;
+    background-color: default;
   }
   100% {
-    background-color: default;
+
+    background-color: white;
   }
 }
 .bar {

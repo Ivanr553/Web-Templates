@@ -1,3 +1,7 @@
+function backHome() {
+  window.open("file:///C:/Users/Ivan/Documents/WebDev/WebTemps/Carla/Home.html", "_self")
+}
+
 function backDrop(element) {
     let buttons = document.getElementsByClassName("nav-btn");
     let divs = document.getElementsByClassName("body-div");
