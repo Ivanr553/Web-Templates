@@ -1,5 +1,5 @@
 function backHome() {
-  window.open("Home.html", "_self")
+  window.open("index.html", "_self")
 }
 
 function backDrop(element) {
