@@ -61,7 +61,8 @@ body {
   justify-content: center;
   align-content: center;
   width: 95vw;
-  margin: 1vh auto 5vh auto;
+  margin: auto;
+  margin-bottom: 5vh;
   padding: 0;
 }
 .img-1 {
@@ -69,14 +70,14 @@ body {
   background-size: cover;
   width: 46vw;
   height: 70vh;
-  margin: 1vh auto 0vh auto;
+  margin: 0vh auto 0vh 0;
 }
 .img-2 {
   background-image: url("images/pic-6.jpg");
   background-size: cover;
   width: 46vw;
   height: 100vh;
-  margin: 1vh auto 0vh auto;
+  margin: 0 0 auto auto;
 }
 .img-3 {
   background-image: url("images/pic-5.jpg");
