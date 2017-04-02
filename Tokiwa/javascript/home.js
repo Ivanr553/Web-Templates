@@ -37,9 +37,9 @@ $(document).ready( function(){
   $(window).scroll(function(){
     let fromTop = document.documentElement.clientHeight*3.25;
   if(jQuery(window).scrollTop() > fromTop) {
-    document.getElementById("body").style.backgroundImage = "url('scss/images/sushi-wallpaper-2.jpg')"
+    document.getElementById("body").style.backgroundImage = "url('scss/images/prep-fish-edit.jpg')";
   }
   else {
-    document.getElementById("body").style.backgroundImage = "url('scss/images/sushi-wallpaper-1.jpg')"
+    document.getElementById("body").style.backgroundImage = "url('scss/images/menus.jpg')";
   }
 })})
