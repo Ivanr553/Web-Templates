@@ -29,6 +29,7 @@ body, html {
   bottom: 20vh;
   color: rgba(180, 180, 180, 0.4);
   cursor: default;
+  animation: fade-right 2.5s forwards;
 }
 #landing-list {
   font-size: 3vmin;
@@ -40,6 +41,23 @@ body, html {
   cursor: pointer;
   color: rgba(200, 200, 200, 0.8);
 }
+.list-item {
+  animation: fade-up 2s forwards;
+  opacity: 0;
+}
+#list-ab {
+  animation-delay: 1s;
+}
+#list-web {
+  animation-delay: 1.3s;
+}
+#list-app {
+  animation-delay: 1.6s;
+}
+#list-contact {
+  animation-delay: 1.9s;
+}
+
 .bottom-bar {
   position: absolute;
   bottom: 0;
@@ -66,6 +84,26 @@ body, html {
   }
   100% {
     transform: rotate(180deg) translatey(-0.7vh)
+  }
+}
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translatey(5vh)
+  }
+  100% {
+    opacity: 1;
+    transform: translatey(0vh)
+  }
+}
+@keyframes fade-right {
+  0% {
+    opacity: 0;
+    transform: translatex(5vh)
+  }
+  100% {
+    opacity: 1;
+    transform: translatex(0vh)
   }
 }
 
