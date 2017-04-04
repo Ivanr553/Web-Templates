@@ -6,21 +6,32 @@
     <title>Ivan Raffucci</title>
   </head>
   <body>
-    <div onmouseover="showContact()" onmouseleave="hideContact()" class="slant">
-      Ivan Raffucci
-      </div>
-      <div class="contact slant">
-        ivanrwebd@gmail.com
-      </div>
-      <div class="bubble" onmouseover="stopGrab(this)" onclick="stopGrab(this)" onmousedown="grab(this)">
-        Work
-      </div>
-      <div class="bubble" onmouseover="stopGrab(this)" onclick="stopGrab(this)" onmousedown="grab(this)">
-        Testimonials
-      </div>
-      <div class="bubble" onmouseover="stopGrab(this)" onclick="stopGrab(this)" onmousedown="grab(this)">
-        GitHub
-      </div>
+    <div class="landing">
+
+      <span id="name">
+        Ivan Raffucci<br>
+        Web Development
+      </span>
+
+      <span id="landing-list">
+        <span onclick="scrollToBio()">- About Me -</span><br>
+        <span>- Websites -</span><br>
+        <span>- Applications -</span><br>
+        <span>- Contact -</span><br>
+      </span>
+
+      <div class="bottom-bar" onclick="scrollToBio()"><div class="down-carrot">^</div></div>
+    </div>
+    <div class="section-2">
+
+    </div>
+    <div class="section-2">
+
+    </div>
   </body>
   <script src="javascript/home-js.js"></script>
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
 </html>

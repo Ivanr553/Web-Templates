@@ -3,58 +3,72 @@
   font-family: "machine";
   src: url("fonts/MachineScript.ttf") format("truetype");
 }
-html {
+* {
   user-select: none;
 }
-body {
+
+body, html {
+  padding: 0;
+  margin: 0;
+  background-color: rgb(237, 237, 237);
+}
+
+.landing {
+  height: 100vh;
+  width: 100%;
+  background-color: grey;
   position: relative;
+  background-image: url("images/landing.jpg");
+  background-size: cover;
+  background-position: right bottom;
 }
-/*Name and Contact Info*/
-.slant {
-  background-color: rgba(10, 10, 10, 0.9);
-  color: rgba(250, 250, 250, 0.9);
-  transform: skewX(350deg);
-  height: 7vh;
-  width: 12vw;
+#name {
+  font-size: 3.5vmin;
+  position: absolute;
+  right: 15vw;
+  bottom: 20vh;
+  color: rgba(180, 180, 180, 0.4);
+  cursor: default;
+}
+#landing-list {
+  font-size: 3vmin;
+  position: absolute;
+  left: 28vw;
+  top: 45vh;
+  padding: 1vh;
+  line-height: 140%;
+  cursor: pointer;
+  color: rgba(200, 200, 200, 0.8);
+}
+.bottom-bar {
+  position: absolute;
+  bottom: 0;
+  width: 100%;;
+  height: 6vh;
+  background-color: rgba(0, 0, 0, 0.3);
   display: flex;
-  align-items: center;
   flex-direction: column;
   justify-content: center;
-  font-size: 2.6vh;
-  margin: 10vh 0 0 10vw;
-  font-family: "machine";
+  align-items: center;
+  cursor: pointer;
+}
+.down-carrot {
+  color: rgba(250, 250, 250, 0.5);
+  font-size: 5vmin;
+  margin-bottom: 1vh;
+  transform: rotate(180deg);
+  animation: bob 1.4s alternate infinite;
   user-select: none;
 }
-.contact {
-  display: none;
-  width: 18vw;
-}
-
-/*Bubbles*/
-.bubble {
-  width: 20vw;
-  height: 20vw;
-  background-color: blue;
-  float: right;
-  border-radius: 20vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-size: 5vh;
-  cursor: pointer;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
-
-/*Animation Keyframes*/
-@keyframes showit {
+@keyframes bob {
   0% {
-    opacity: 0;
+    transform: rotate(180deg) translatey(0)
   }
   100% {
-    opacity: 1;
+    transform: rotate(180deg) translatey(-0.7vh)
   }
+}
+
+.section-2 {
+  height: 100vh;
 }
