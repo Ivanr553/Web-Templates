@@ -31,6 +31,11 @@ body, html {
   cursor: default;
   animation: fade-right 2.5s forwards;
 }
+#web-dev-landing {
+  font-size: 2.2vmin;
+  margin-left: 1.3vw;
+  margin-top: -0.2vh;
+}
 #landing-list {
   font-size: 3vmin;
   position: absolute;
@@ -49,13 +54,13 @@ body, html {
   animation-delay: 1s;
 }
 #list-web {
-  animation-delay: 1.3s;
+  animation-delay: 1.4s;
 }
 #list-app {
-  animation-delay: 1.6s;
+  animation-delay: 1.7s;
 }
 #list-contact {
-  animation-delay: 1.9s;
+  animation-delay: 2s;
 }
 
 .bottom-bar {
@@ -107,6 +112,97 @@ body, html {
   }
 }
 
+.section-1 {
+  height: 100vh;
+  border: solid 0.5px black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 .section-2 {
   height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.section-2-center {
+  height: 100%;
+  width: auto;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper {
+  position: relative;
+  z-index: 10;
+  cursor: pointer;
+  margin: 0.5vw;
+}
+.website-block {
+  width: 15vw;
+  height: 10vw;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin-bottom: 8vh;
+}
+.caption {
+  background-color: rgba(255, 255, 255, 0.25);
+  position: absolute;
+  bottom: -3.5vw;
+  height: 3.5vw;
+  width: 15vw;
+  z-index: -1;
+  font-size: 1vw;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.carla {
+background-image: url("images/Carla-Web.png");
+}
+.carla:hover .cap-carla {
+  display: flex;
+  animation: drop-down 800ms forwards;
+}
+.tokiwa {
+background-image: url("images/Tokiwa-Web.png");
+}
+.tokiwa:hover .cap-tokiwa {
+  display: flex;
+  animation: drop-down 800ms forwards;
+}
+
+.section-3 {
+  height: 100vh;
+  border: solid 0.5px black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-4 {
+  height: 100vh;
+  border: solid 0.5px black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@keyframes drop-down {
+  0% {
+    transform: translatey(-7vh)
+  }
+  100% {
+    transform: translatey(0);
+  }
 }
