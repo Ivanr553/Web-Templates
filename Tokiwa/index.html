@@ -1,7 +1,7 @@
-<!DOCTYPE html>
 <link rel="stylesheet" href="scss/home.scss">
 <html>
   <head>
+    <link href="scss/images/favicon.ico" rel="icon" type="image/x-icon" />
     <title>Tokiwa</title>
   </head>
   <body id="body">
@@ -26,14 +26,23 @@
     </div>
 
   <div class="body-div-2">
-    <img class="mySlides" src="scss/images/ramen2.jpg">
-    <img class="mySlides" src="scss/images/prep2.jpg">
-    <img class="mySlides" src="scss/images/ramen1.jpg">
-    <img class="mySlides" src="scss/images/prep1.jpg">
+    <div class="body-div-images" id="body-div-images">
+      <div class="body-div-images-plus" onclick="carousel(1)">></div>
+      <img class="mySlides" src="scss/images/ramen2.jpg">
+      <img class="mySlides" src="scss/images/prep2.jpg">
+      <img class="mySlides" src="scss/images/ramen1.jpg">
+      <img class="mySlides" src="scss/images/prep1.jpg">
+      <div class="body-div-images-minus" onclick="carousel(-1)"><</div>
+    </div>
     <div class="body-div-2-cont">
       <div class="bar" id="top-myslides-bar"></div>
     <span class="body-p mySlides-span">Ramen is a classic japanese dish made of pork broth and ramen noodles. Tokiwa has taken this tradtional dish and added their own unique style with their own homemade broth. Come to Tokiwa and ask about our Ramen!</span>
     <div class="bar" id="bottom-myslides-bar"></div>
+    </div>
+    <div class="body-p mySlides-span-2" id="mySlides-span-2"><b>
+      Call us to reserve a table or oder takeout!
+      <br>
+      (805) 517 1999</b>
     </div>
   </div>
 
