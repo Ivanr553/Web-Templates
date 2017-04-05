@@ -9,23 +9,53 @@
     <div class="landing">
 
       <span id="name">
-        Ivan Raffucci<br>
-        Web Development
+        Ivan Raffucci
+        <br><div id="web-dev-landing">Web Development</div>
       </span>
 
       <div id="landing-list">
-        <div class="list-item" onclick="scrollToBio()" id="list-ab">- About Me -</div>
-        <div class="list-item" id="list-web">- Websites -</div>
-        <div class="list-item" id="list-app">- Applications -</div>
-        <div class="list-item" id="list-contact">- Contact -</div>
+        <div class="list-item" id="list-ab" onclick="scrollToBio()">- About Me -</div>
+        <div class="list-item" id="list-web" onclick="scrollToWebsites()">- Websites -</div>
+        <div class="list-item" id="list-app" onclick="scrollToApplications()">- Applications -</div>
+        <div class="list-item" id="list-contact" onclick="scrollToContact()">- Contact -</div>
       </div>
 
       <div class="bottom-bar" onclick="scrollToBio()"><div class="down-carrot">^</div></div>
     </div>
-    <div class="section-2">
+
+    <div class="section-1">
+
+      About Me
 
     </div>
+
     <div class="section-2">
+      <div class="section-2-center">
+      <div class="wrapper">
+        <div class="website-block carla" onclick="openCarla()">
+          <div class="caption cap-carla">
+            Carla's Website
+          </div>
+        </div>
+      </div>
+      <div class="wrapper">
+        <div class="website-block tokiwa" onclick="openTokiwa()">
+          <div class="caption cap-tokiwa">
+            Tokiwa Sushi Website
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <div class="section-3">
+
+      Applications
+
+    </div>
+    <div class="section-4">
+
+      Contact Me
 
     </div>
   </body>
