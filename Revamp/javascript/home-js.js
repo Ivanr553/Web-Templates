@@ -1,5 +1,5 @@
 function scrollToBio() {
-  $("body").animate({ scrollTop: $(".section-1").offset().top}, 1500);
+  $("body").animate({ scrollTop: $(".section-1-1").offset().top}, 1500);
 }
 
 function scrollToWebsites() {
@@ -30,16 +30,41 @@ function backToTop() {
   $("body").animate({ scrollTop: 0}, 2500)
 }
 
-$(window).scroll(function() {
-  let scroll = $(window).height();
-  if($(window).scrollTop() > scroll) {
-    document.getElementById("back-to-top").style.display = "flex";
-  }
-  if($(window).scrollTop() > scroll*1.6) {
-    document.getElementById("carla").style.animation = "slide-in-left 1.5s forwards";
-    document.getElementById("tokiwa").style.animation = "slide-in-right 1.5s forwards";
+function allowOverflow(element) {
+  if(element.style.overflowY == "hidden") {
+  element.style.overflowY = "scroll";
   }
   else {
-    document.getElementById("back-to-top").style.display = "none";
+    element.style.overflowY = "hidden";
+  }
+}
+
+$(window).scroll(function() {
+  let scroll = $(window).height();
+  let scrollT = $(this).scrollTop();
+
+    $(".grey-box-bottom").css({
+      "transform" : "translate(0px, "+ scrollT /3 +"px)"
+    })
+    $(".me").css({
+      "transform" : "translate(0px, -"+ scrollT /10 +"px)"
+    })
+
+
+  if($(window).scrollTop() > scroll*0.5) {
+    $("#back-to-top").css({"display" : "flex"});
+  }
+  if($(window).scrollTop() > scroll*1.6) {
+    $("#carla").css({"animation" : "slide-in-left 1.5s forwards"});
+    $("#tokiwa").css({"animation" : "slide-in-right 1.5s forwards"});
+  }
+  else {
+    $("#back-to-top").css({"display" : "none"});
+  }
+})
+
+$(".about-me-span").each(function() {
+  if($(".about-me-span").css("font-size") < 12) {
+    $("about-me-span").css("font-size") = 12;
   }
 })
