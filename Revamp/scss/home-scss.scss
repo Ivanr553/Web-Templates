@@ -163,7 +163,7 @@ div {
   min-width: 400px;
   height: auto;
   background-color: rgba(250, 250, 250, 1);
-  font-size:calc(9px + 1.5vmin);
+  font-size:calc(7px + 1.5vmin);
   padding: 2vw;
   margin-bottom: 60vh;
   border: solid 5px rgba(0, 0, 0, 0.8);
@@ -361,6 +361,18 @@ div {
   justify-content: center;
   align-items: center;
   font-size: 3vw;
+}
+.raincheck {
+  height: 10vw;
+  width: 10vw;
+  background-color: grey;
+  font-size: 1.2vw;
+  border-radius: 10vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
 .section-4 {
