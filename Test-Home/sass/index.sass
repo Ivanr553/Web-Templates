@@ -1,0 +1,210 @@
+//truetype fonts
+@font-face
+  font-family: "machine"
+  src: url("fonts/MachineScript.ttf") format("truetype")
+
+@font-face
+  font-family: "top"
+  src: url("fonts/TopModern.ttf") format("truetype")
+
+//html tags
+*
+  user-select: none
+
+body
+  background-color: rgb(225, 225, 225)
+  background-color: rgba(58, 102, 173, 0.2)
+  background-color: rgb(20, 20, 20)
+
+//usefull classes
+.black
+  color: rgb(10, 10, 10)
+
+.green
+  color: green
+
+.red
+  color: red
+
+.grey
+  color: grey
+
+.center
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: baseline
+
+.machine
+  font-family: "machine"
+
+.top
+  font-family: "top"
+
+.serif
+  font-family: serif
+
+.default
+  cursor: default
+
+//Logo
+#name
+  font-size: 4em
+  position: absolute
+  left: 5vw
+  top: 5vh
+  color: rgba(250, 250, 250, 1)
+  cursor: default
+
+#web-dev-landing
+  font-size: 0.4em
+  margin-left: 1.3vw
+  margin-top: -0.8vh
+  color: rgba(40, 101, 226, 1)
+
+//Navigation Bar
+#nav-bar
+  position: absolute
+  top: 5vh
+  right: 5vw
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: center
+  color: white
+
+.nav-button
+  margin: 0.5vw
+  cursor: pointer
+  font-family: "top"
+
+.nav-button:hover
+  text-decoration: underline
+
+//Overlay of selection
+#selection-display
+  width: 100%
+  height: 100%
+  font-size: 3em
+  text-align: right
+  position: absolute
+  top: 0
+  left: 0
+  display: none
+  z-index: 5
+
+.selection
+  opacity: 0
+  position: absolute
+  top: 10vh
+  right: 5vw
+  font-size: 2.5em
+
+//Panels
+.panel
+  position: absolute
+  bottom: 0
+  margin-left: 10vw
+  font-size: 2em
+  cursor: pointer
+  transform-origin: bottom left
+  z-index: 0
+
+#panel-about-me
+  width: 15vw
+  height: 50vh
+  animation: shrink 0.5s forwards
+  background-image: url("../images/portrait-edit-2.jpg")
+  background-size: cover
+  background-position: right
+
+#panel-about-me:hover
+  animation: grow 1s forwards
+
+#panel-about-me-img
+  width: 100%
+  height: 100%
+  background-image: url("../images/portrait-edit-1.jpg")
+  background-size: cover
+  background-position: right
+  animation: fade-in 1s forwards
+
+#panel-about-me-img:hover
+  animation: fade-out 1s forwards
+
+#panel-portfolio
+  width: 20vw
+  height: 60vh
+  margin-left: 35vw
+  animation: shrink 0.5s forwards
+  background-color: rgba(66, 152, 244, 0.2)
+  background-color: rgb(134, 174, 239)
+  background-image: url("../images/portfolio.png")
+  background-size: contain
+  background-position: left
+  background-repeat: no-repeat
+
+#panel-portfolio:hover
+  animation: grow 1s forwards
+
+#panel-contact
+  width: 10vw
+  height: 40vh
+  margin-left: 70vw
+  // background-image: url("../images/blog-back.jpg")
+  background-size: cover
+  background-color: rgba(20, 20, 20, 0.6)
+  background-color: rgba(220, 220, 220, 0.6)
+  animation: shrink 0.5s forwards
+  color: black
+
+#panel-contact:hover
+  animation: grow 1s forwards
+
+// #panel-contact-styling
+//   width: 80%
+//   height: 90%
+//   background-color: white
+//   position: absolute
+//   margin-left: 4%
+
+#panel-contact-span
+  font-size: 1.8em
+  transform: rotate(90deg)
+  margin-top: 20%
+  margin-right: 4vw
+
+#panel-contact:hover
+  background-color: rgb(50, 50, 50)
+  color: white
+
+//Animations
+@keyframes grow
+  100%
+    transform: scale(1.15)
+
+@keyframes grow-up
+  100%
+    transform: scaley(1.15)
+
+@keyframes shrink
+  0%
+    transform: scale(1.15)
+  100%
+    transform: scale(1)
+
+@keyframes shrink-up
+  0%
+    transform: scaley(1.15)
+  100%
+    transform: scaley(1)
+
+@keyframes fade-out
+  100%
+    opacity: 0
+
+@keyframes fade-in
+  0%
+    opacity: 0
+  100%
+    opacity: 1

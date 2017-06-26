@@ -1,0 +1,56 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ivan Raffucci: Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/index.css">
+  </head>
+  <body>
+
+    <span class="serif" id="name">
+      Ivan Raffucci
+      <br><div class="top" id="web-dev-landing">Web Development</div>
+    </span>
+
+<div id="container">
+
+    <div id="nav-bar">
+
+      <div class="nav-button">
+        About-Me
+      </div>
+      <div class="nav-button">
+        Portfolio
+      </div>
+      <div class="nav-button">
+        Contact Me
+      </div>
+
+    </div>
+
+    <div id="selection-display">
+      <span class="selection" id="selection-about-me">Find out more about me</span>
+      <span class="selection" id="selection-portfolio">Check out some things I've made</span>
+      <span class="selection" id="selection-contact">Let's get in touch</span>
+    </div>
+
+    <div class="panel" id="panel-about-me" onmouseover="showAboutMe()" onmouseout="clearOverlay()">
+      <div id="panel-about-me-img">
+
+      </div>
+    </div>
+
+    <div class="panel" id="panel-portfolio" onmouseover="showPortfolio()" onmouseout="clearOverlay()">
+    </div>
+
+    <div class="panel" id="panel-contact" onmouseover="showContact()" onmouseout="clearOverlay()">
+      <div id="panel-contact-styling"></div>
+      <div id="panel-contact-span">Contact</div>
+    </div>
+
+  </div>
+
+
+  </body>
+  <script type="text/javascript" src="javascript/index.js"></script>
+</html>

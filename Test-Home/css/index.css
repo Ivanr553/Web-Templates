@@ -1,0 +1,277 @@
+@font-face {
+  font-family: "machine";
+  src: url("fonts/MachineScript.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "top";
+  src: url("fonts/TopModern.ttf") format("truetype"); }
+
+* {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+body {
+  background-color: #e1e1e1;
+  background-color: rgba(58, 102, 173, 0.2);
+  background-color: #141414; }
+
+.black {
+  color: #0a0a0a; }
+
+.green {
+  color: green; }
+
+.red {
+  color: red; }
+
+.grey {
+  color: grey; }
+
+.center {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: baseline;
+  -webkit-align-items: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline; }
+
+.machine {
+  font-family: "machine"; }
+
+.top {
+  font-family: "top"; }
+
+.serif {
+  font-family: serif; }
+
+.default {
+  cursor: default; }
+
+#name {
+  font-size: 4em;
+  position: absolute;
+  left: 5vw;
+  top: 5vh;
+  color: #fafafa;
+  cursor: default; }
+
+#web-dev-landing {
+  font-size: 0.4em;
+  margin-left: 1.3vw;
+  margin-top: -0.8vh;
+  color: #2865e2; }
+
+#nav-bar {
+  position: absolute;
+  top: 5vh;
+  right: 5vw;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: white; }
+
+.nav-button {
+  margin: 0.5vw;
+  cursor: pointer;
+  font-family: "top"; }
+
+.nav-button:hover {
+  text-decoration: underline; }
+
+#selection-display {
+  width: 100%;
+  height: 100%;
+  font-size: 3em;
+  text-align: right;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  z-index: 5; }
+
+.selection {
+  opacity: 0;
+  position: absolute;
+  top: 10vh;
+  right: 5vw;
+  font-size: 2.5em; }
+
+.panel {
+  position: absolute;
+  bottom: 0;
+  margin-left: 10vw;
+  font-size: 2em;
+  cursor: pointer;
+  -webkit-transform-origin: bottom left;
+  -ms-transform-origin: bottom left;
+  transform-origin: bottom left;
+  z-index: 0; }
+
+#panel-about-me {
+  width: 15vw;
+  height: 50vh;
+  -webkit-animation: shrink 0.5s forwards;
+  animation: shrink 0.5s forwards;
+  background-image: url("../images/portrait-edit-2.jpg");
+  background-size: cover;
+  background-position: right; }
+
+#panel-about-me:hover {
+  -webkit-animation: grow 1s forwards;
+  animation: grow 1s forwards; }
+
+#panel-about-me-img {
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/portrait-edit-1.jpg");
+  background-size: cover;
+  background-position: right;
+  -webkit-animation: fade-in 1s forwards;
+  animation: fade-in 1s forwards; }
+
+#panel-about-me-img:hover {
+  -webkit-animation: fade-out 1s forwards;
+  animation: fade-out 1s forwards; }
+
+#panel-portfolio {
+  width: 20vw;
+  height: 60vh;
+  margin-left: 35vw;
+  -webkit-animation: shrink 0.5s forwards;
+  animation: shrink 0.5s forwards;
+  background-color: rgba(66, 152, 244, 0.2);
+  background-color: #86aeef;
+  background-image: url("../images/portfolio.png");
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat; }
+
+#panel-portfolio:hover {
+  -webkit-animation: grow 1s forwards;
+  animation: grow 1s forwards; }
+
+#panel-contact {
+  width: 10vw;
+  height: 40vh;
+  margin-left: 70vw;
+  background-size: cover;
+  background-color: rgba(20, 20, 20, 0.6);
+  background-color: rgba(220, 220, 220, 0.6);
+  -webkit-animation: shrink 0.5s forwards;
+  animation: shrink 0.5s forwards;
+  color: black; }
+
+#panel-contact:hover {
+  -webkit-animation: grow 1s forwards;
+  animation: grow 1s forwards; }
+
+#panel-contact-span {
+  font-size: 1.8em;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  margin-top: 20%;
+  margin-right: 4vw; }
+
+#panel-contact:hover {
+  background-color: #323232;
+  color: white; }
+
+@-webkit-keyframes grow {
+  100% {
+    -webkit-transform: scale(1.15);
+    transform: scale(1.15); } }
+
+@keyframes grow {
+  100% {
+    -webkit-transform: scale(1.15);
+    transform: scale(1.15); } }
+
+@-webkit-keyframes grow-up {
+  100% {
+    -webkit-transform: scaley(1.15);
+    transform: scaley(1.15); } }
+
+@keyframes grow-up {
+  100% {
+    -webkit-transform: scaley(1.15);
+    transform: scaley(1.15); } }
+
+@-webkit-keyframes shrink {
+  0% {
+    -webkit-transform: scale(1.15);
+    transform: scale(1.15); }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+
+@keyframes shrink {
+  0% {
+    -webkit-transform: scale(1.15);
+    transform: scale(1.15); }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+
+@-webkit-keyframes shrink-up {
+  0% {
+    -webkit-transform: scaley(1.15);
+    transform: scaley(1.15); }
+  100% {
+    -webkit-transform: scaley(1);
+    transform: scaley(1); } }
+
+@keyframes shrink-up {
+  0% {
+    -webkit-transform: scaley(1.15);
+    transform: scaley(1.15); }
+  100% {
+    -webkit-transform: scaley(1);
+    transform: scaley(1); } }
+
+@-webkit-keyframes fade-out {
+  100% {
+    opacity: 0; } }
+
+@keyframes fade-out {
+  100% {
+    opacity: 0; } }
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
