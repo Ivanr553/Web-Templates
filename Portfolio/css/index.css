@@ -35,7 +35,8 @@ body, html {
   width: 10vw;
   font-size: 2em;
   cursor: pointer;
-  color: rgba(250, 250, 250, 0.5); }
+  color: rgba(250, 250, 250, 0.5);
+  z-index: 50; }
 
 #left-arrow {
   left: 0;
@@ -114,3 +115,25 @@ body, html {
 #k {
   right: 19%;
   bottom: 12%; }
+
+#info-div {
+  width: 50vw;
+  height: 65vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 24.5vh;
+  left: 24.5vw;
+  display: none;
+  padding: 1vw;
+  text-align: center;
+  font-size: 2em;
+  color: rgba(250, 250, 250, 0.9); }
+
+#caption {
+  position: absolute;
+  bottom: 2.5vh;
+  right: 1vw;
+  color: rgba(250, 250, 250, 0.5);
+  font-size: 1.3em;
+  font-style: italic;
+  z-index: 0; }

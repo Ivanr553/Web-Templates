@@ -31,6 +31,22 @@ function carousel(dir) {
   }
 }
 
+//Show about-me info when clicking logo
+function showInfo() {
+  if($("#info-div").css("display") == "block") {
+    $("#info-div").css({
+      "display" : "none"
+    })
+  }
+  else {
+    $("#info-div").css({
+      "display" : "block"
+    })
+  }
+}
+
+
+//IMage preloading function with call
 function preloadImages() {
   let imgArray = ["p0", "p1", "p2", "p3", "p4", "p5"];
 
