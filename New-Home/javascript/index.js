@@ -43,3 +43,19 @@ function openTokiwa() {
 function openRaincheck() {
   window.open("https://tranquil-chamber-53541.herokuapp.com/rainchecks")
 }
+
+//Jquery for hover animations in projects section
+$(document).ready(function() {
+  $("#carla").hover( function() {
+    showCarla()
+  })
+  $("#jk").hover( function() {
+    showJk()
+  })
+  $("#tokiwa").hover( function() {
+    showTokiwa()
+  })
+  $("#raincheck").hover(function() {
+      showRaincheck()
+  })
+})

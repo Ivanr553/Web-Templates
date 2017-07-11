@@ -49,12 +49,47 @@ section {
   font-family: times;
   cursor: default; }
 
+#pre-projects {
+  position: relative; }
+
+#pre-projects-info {
+  width: 50%;
+  height: auto;
+  text-align: left;
+  font-size: 1.9em;
+  position: absolute;
+  top: 20%;
+  left: 20%; }
+
+#pre-projects-info-title {
+  font-size: 1.2em;
+  color: #2c70f7;
+  font-weight: bold;
+  font-family: sans-serif; }
+
+#pre-projects-info-2 {
+  width: 50%;
+  height: auto;
+  text-align: left;
+  font-size: 1.7em;
+  position: absolute;
+  bottom: 35%;
+  left: 25%; }
+
+#pre-projects-info-title-2 {
+  font-size: 1.2em;
+  color: #2c70f7;
+  font-weight: bold;
+  font-family: sans-serif;
+  text-align: right; }
+
 #projects {
   position: relative; }
 
 #display {
   position: absolute;
   top: 0;
+  left: 0;
   width: 100%;
   height: 110%;
   background-image: url("../images/carla.jpg");
@@ -113,6 +148,58 @@ section {
 #raincheck {
   background-image: url("../images/raincheck.jpg"); }
 
+#about {
+  position: relative; }
+
+#skills-container {
+  width: 50%;
+  height: 60%;
+  position: absolute;
+  left: 5%;
+  top: 20%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: left;
+  -webkit-align-items: left;
+  -ms-flex-align: left;
+  align-items: left;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.skill {
+  height: 7%;
+  width: 80%;
+  background-color: blue;
+  margin-top: 5%; }
+
+#js {
+  background-color: purple; }
+
+#html {
+  width: 75%;
+  background-color: orange; }
+
+#sass {
+  width: 75%;
+  background-color: pink; }
+
+#node {
+  width: 60%;
+  background-color: green; }
+
+#angular {
+  width: 60%;
+  background-color: red; }
+
 @-webkit-keyframes grow {
   0% {
     -webkit-transform: scale(1);
@@ -144,3 +231,27 @@ section {
   100% {
     -webkit-transform: scale(1);
     transform: scale(1); } }
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes fade-out {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@keyframes fade-out {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
