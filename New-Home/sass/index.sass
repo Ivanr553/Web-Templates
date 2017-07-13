@@ -91,6 +91,37 @@ section
   background-size: cover
   cursor: pointer
 
+#info-icon
+  width: 3.5vw
+  height: 3.5vw
+  position: absolute
+  top: 1vh
+  left: 0vw
+  background-image: url("../images/info-icon.png")
+  background-position: center
+  background-size: cover
+  z-index: 100
+  cursor: pointer
+  animation: shrink 0.5s forwards
+
+#info-icon:hover
+  animation: grow 1s forwards
+
+#info-content
+  width: 30%
+  height: calc(90vh - 8vw - 2vh)
+  background-color: rgba(0, 0, 0, 0.8)
+  color: rgb(220, 220, 220)
+  position: absolute
+  left: 0
+  top: 2vh
+  cursor: default
+  display: none
+
+#info-content-span
+  margin: 3%
+  margin-top: 8%
+
 //Project Navigation Bar
 #bottom-bar
   width: 100%
@@ -106,7 +137,6 @@ section
 .bottom-bar-project
   width: 4vw
   height: 4vw
-  // background-color: red
   border: solid 1px grey
   margin-left: 3vw
   cursor: pointer
@@ -195,3 +225,9 @@ section
     opacity: 1
   100%
     opacity: 0
+
+@keyframes shift-right
+  0%
+    transform: translatex(-100%)
+  100%
+    transform: translatex(0%)
