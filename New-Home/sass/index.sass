@@ -9,13 +9,17 @@ section
   overflow-y: hidden
 
 //Landing Section
+#landing
+  // background-color: rgb(220, 220, 220)
+
 //Logo
 #name
   font-size: 3.5em
   position: absolute
-  left: 3vw
+  right: 3vw
   top: 3vh
   color: rgba(250, 250, 250, 1)
+  color: rgb(20, 20, 20)
   cursor: default
 
 #web-dev-landing
@@ -24,6 +28,18 @@ section
   margin-top: -0.8vh
   color: rgba(40, 101, 226, 1)
 
+//Portrait
+#portrait
+  width: 25vw
+  height: 25vw
+  position: absolute
+  left: 10vw
+  top: 20vh
+  border-radius: 100vw
+  background-image: url("../images/portrait-edit.jpg")
+  background-size: cover
+  background-position: bottom right
+
 //Landing information
 #landing-info
   display: flex
@@ -31,14 +47,17 @@ section
   align-items: center
   justify-content: center
   position: absolute
-  left: 8vw
-  top: 30vh
+  right: 5vw
+  top: 35vh
   z-index: 50
-  color: rgb(230, 230, 230)
-  width: 35vw
+  color: rgb(30, 30, 30)
+  padding: 1%
+  width: 50vw
   font-size: 1.8em
   font-family: times
   cursor: default
+  padding-bottom: 2%
+  border-bottom: solid 2px grey
 
 
 //Pre-Projcts section
@@ -79,13 +98,14 @@ section
 //Projects Section
 #projects
   position: relative
+  height: 100vh
 
 #display
   position: absolute
   top: 0
   left: 0
   width: 100%
-  height: 110%
+  height: 100%
   background-image: url("../images/carla.jpg")
   background-position: center
   background-size: cover
@@ -160,46 +180,139 @@ section
   background-image: url("../images/raincheck.jpg")
 
 
-//About section
-#about
+//Pre-skills Section
+#pre-skills
   position: relative
-//Skills
-#skills-container
-  width: 50%
-  height: 60%
-  position: absolute
-  left: 5%
-  top: 20%
-  // background-color: rgba(0, 0, 0, 0.4)
   display: flex
+  align-items: center
   flex-direction: column
-  align-items: left
+  justify-content: center
+  height: 80vh
+
+//Pre-skills Content
+#pre-skills-content
+  position: absolute
+  width: 55%
+  font-size: 1.5em
+  margin-left: 5vw
+
+#pre-skills-content-title
+  font-size: 1.4em
+  color: rgb(44, 112, 247)
+  font-weight: bold
+  font-family: sans-serif
+
+//skills section
+#skills
+  position: relative
+  // background-color: rgb(240, 240, 240)
+  display: flex
+  flex-direction: row
+  align-items: center
   justify-content: center
 
-.skill
-  height: 7%
-  width: 80%
-  background-color: blue
-  margin-top: 5%
+//Skills
+.skill-container
+  width: 30vw
+  height: 90%
+  margin-left: 1.5%
+  background-color: rgba(0, 0, 0, 0.1)
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  padding-top: 3vh
 
-#js
-  background-color: purple
+.skill-icon
+  border-radius: 150vw
+  width: 13vw
+  height: 13vw
+  background-position: center
+  background-size: cover
+  background-color: rgba(0, 0, 0, 0.1)
 
-#html
-  width: 75%
-  background-color: orange
+#html-icon
+  background-image: url("../images/html.png")
 
-#sass
-  width: 75%
-  background-color:  pink
+#ang-icon
+  background-image: url("../images/angular2.png")
 
-#node
-  width: 60%
-  background-color: green
+#node-icon
+  background-image: url("../images/node.png")
 
-#angular
-  width: 60%
-  background-color: red
+.skill-content
+  width: 85%
+  height: 35%
+  font-size: 1.1em
+  margin-top: 5vh
+
+//Contact Section
+#contact
+  // background-color: rgb(221, 234, 255)
+  height: 100vh
+  position: relative
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+
+//Contact Content
+#contact-content-1
+  font-size: 2.5em
+  color: rgb(44, 112, 247)
+  font-weight: bold
+
+#contact-email
+  margin-top: 5vh
+  font-size: 1.3em
+
+#contact-email-link
+  color: rgb(50, 50, 50)
+  text-decoration: none
+
+//Contact Bar for links
+#contact-bar
+  width: 100%
+  height: 10%
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: center
+  position: absolute
+  bottom: 0
+  background-color: rgba(0, 0, 0, 0.5)
+
+//Contact Buttons/links
+.contact-button
+  width: 3vw
+  height: 3vw
+  border-radius: 100vw
+  background-color: rgba(0, 0, 0, 0.3)
+  margin-left: 1vw
+  cursor: pointer
+  background-size: cover
+  background-position: center
+
+#github
+  background-image: url("../images/git-edit.png")
+
+#codepen
+  background-image: url("../images/codepen.png")
+
+#linkedin
+  background-image: url("../images/linkedin.png")
+
+#google
+  background-image: url("../images/google.png")
+
+//Signature
+#signature
+  position: absolute
+  bottom: 0
+  right: 1vw
+  font-style: italic
+  color: rgba(0, 0, 0, 0.9)
+
 
 //Animations
 @keyframes grow
