@@ -102,6 +102,10 @@ section
 
 #display
   position: absolute
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
   top: 0
   left: 0
   width: 100%
@@ -109,62 +113,47 @@ section
   background-image: url("../images/carla.jpg")
   background-position: center
   background-size: cover
-  cursor: pointer
-
-#info-icon
-  width: 3.5vw
-  height: 3.5vw
-  position: absolute
-  top: 1vh
-  left: 0vw
-  background-image: url("../images/info-icon.png")
-  background-position: center
-  background-size: cover
-  z-index: 100
-  cursor: pointer
-  animation: shrink 0.5s forwards
-
-#info-icon:hover
-  animation: grow 1s forwards
 
 #info-content
-  width: 30%
-  height: calc(90vh - 8vw - 2vh)
+  width: 70%
+  height: 40%
   background-color: rgba(0, 0, 0, 0.8)
   color: rgb(220, 220, 220)
   position: absolute
-  left: 0
-  top: 2vh
+  bottom: 0
   cursor: default
-  display: none
+  font-weight: bold
+  animation: move-down 1s forwards
 
-#info-content-span
-  margin: 3%
-  margin-top: 8%
+.info-content-span
+  margin: 5%
+  margin-top: 3%
+  margin-bottom: 0
+  font-size: 1em
 
 //Project Navigation Bar
-#bottom-bar
-  width: 100%
-  height: 7vw
+#project-bar
+  height: 100%
+  width: 7vw
   display: flex
-  flex-direction: row
+  flex-direction: column
   align-items: center
   justify-content: center
   background-color: rgba(0, 0, 0, 0.4)
   position: absolute
-  bottom: 0vh
+  left: 0vh
 
-.bottom-bar-project
+.project
   width: 4vw
   height: 4vw
   border: solid 1px grey
-  margin-left: 3vw
+  margin-top: 3vh
   cursor: pointer
   animation: shrink .5s forwards
   background-position: center
   background-size: cover
 
-.bottom-bar-project:hover
+.project:hover
   animation: grow 1s forwards
 
 #carla
@@ -229,7 +218,7 @@ section
   height: 13vw
   background-position: center
   background-size: cover
-  background-color: rgba(0, 0, 0, 0.1)
+  // background-color: rgba(0, 0, 0, 0.1)
 
 #html-icon
   background-image: url("../images/html.png")
@@ -246,9 +235,9 @@ section
   font-size: 1.1em
   margin-top: 5vh
 
+
 //Contact Section
 #contact
-  // background-color: rgb(221, 234, 255)
   height: 100vh
   position: relative
   display: flex
@@ -256,38 +245,56 @@ section
   align-items: center
   justify-content: center
 
+//Framing Bars
+.bar
+  width: 100%
+  height: 10vh
+  // background-color: rgba(0, 0, 0, 0.4)
+  position: absolute
+
+#top-bar
+  top: 0
+
+#bottom-bar
+  // background-color: rgba(0, 0, 0, 0.5)
+  bottom: 0
+
 //Contact Content
 #contact-content-1
-  font-size: 2.5em
+  font-size: 3em
   color: rgb(44, 112, 247)
   font-weight: bold
 
 #contact-email
-  margin-top: 5vh
-  font-size: 1.3em
+  font-size: 1.5em
 
 #contact-email-link
   color: rgb(50, 50, 50)
   text-decoration: none
+  font-weight: bold
+  font-style: Times
+
+//Division bar
+#divider
+  width: 20vw
+  height: 1vh
+  border-top: solid 1px grey
+  margin-top: 4vh
+  margin-bottom: 3vh
 
 //Contact Bar for links
 #contact-bar
-  width: 100%
-  height: 10%
   display: flex
   flex-direction: row
   align-items: center
   justify-content: center
-  position: absolute
-  bottom: 0
-  background-color: rgba(0, 0, 0, 0.5)
+  margin-top: 3vh
 
 //Contact Buttons/links
 .contact-button
-  width: 3vw
-  height: 3vw
+  width: 4.5vw
+  height: 4.5vw
   border-radius: 100vw
-  background-color: rgba(0, 0, 0, 0.3)
   margin-left: 1vw
   cursor: pointer
   background-size: cover
@@ -295,21 +302,23 @@ section
 
 #github
   background-image: url("../images/git-edit.png")
+  margin-left: 0
 
 #codepen
   background-image: url("../images/codepen.png")
 
 #linkedin
   background-image: url("../images/linkedin.png")
+  border: solid 1px grey
 
-#google
-  background-image: url("../images/google.png")
+#resume
+  background-image: url("../images/resume.png")
+  border: solid 1px grey
 
 //Signature
 #signature
   position: absolute
   bottom: 0
-  right: 1vw
   font-style: italic
   color: rgba(0, 0, 0, 0.9)
 
@@ -344,3 +353,15 @@ section
     transform: translatex(-100%)
   100%
     transform: translatex(0%)
+
+@keyframes move-up
+  0%
+    transform: translateY(90%)
+  100%
+    transform: translateY(0%)
+
+@keyframes move-down
+  0%
+    transform: translateY(0)
+  100%
+    transform: translateY(90%)

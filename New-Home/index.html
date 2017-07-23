@@ -32,27 +32,29 @@
 </section>
 
 <section id="projects">
-  <div id="info-icon" onclick="showInfo()"></div>
-  <div id="display" onclick="openCarla()">
-    <div id="info-content">
-      <div id="info-content-span">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-<br><br>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  <div id="display">
+    <div id="info-content" onclick="moveContentUp()">
+        <div class="info-content-span" id="carla-span">
+          <h2>Description: </h2>
+          This is a website that I have created for one of my first clients. I worked with Carla to create the design, layout, and content of the website to bring her business on to the web. This site highlights my goal to create simple and elegant websites that get out of the way of the content. The website consists of three pages: the home page showing her most impressive work, an about me page where visitors can learn about her and contact her, and a gallery page with albums of some of the work she would like to showcase.
+        <h2>Link:</h2>
+        <a href="http://carlakunkelweb.github.io/website/" target="blank">
+          carlakunkelweb.github.io/website
+        </a>
       </div>
     </div>
   </div>
-  <div id="bottom-bar">
-    <div class="bottom-bar-project" id="carla" onclick="showCarla()">
+  <div id="project-bar">
+    <div class="project" id="carla" onclick="showCarla()">
 
     </div>
-    <div class="bottom-bar-project" id="jk" onclick="showJk()">
+    <div class="project" id="jk" onclick="showJk()">
 
     </div>
-    <div class="bottom-bar-project" id="tokiwa" onclick="showTokiwa()">
+    <div class="project" id="tokiwa" onclick="showTokiwa()">
 
     </div>
-    <div class="bottom-bar-project" id="raincheck" onclick="showRaincheck()">
+    <div class="project" id="raincheck" onclick="showRaincheck()">
 
     </div>
   </div>
@@ -90,19 +92,25 @@
 </section>
 
 <section id="contact">
+  <div class="bar" id="top-bar"></div>
   <div id="contact-content-1">
     Let's get in touch
+  </div>
+  <div id="divider">
+
   </div>
   <div id="contact-email">
     <a id="contact-email-link" href="mailto:ivanr553@gmail.com">ivanr553@gmail.com</a>
   </div>
-
-
   <div id="contact-bar">
     <a class="contact-button" href="https://github.com/Ivanr553" target="_blank" id="github"></a>
-    <a class="contact-button" href="https://codepen.io/ivanr553/pens/public/" target="_blank" id="codepen"></a>
     <a class="contact-button" href="https://www.linkedin.com/in/ivan-manuel-raffucci-16b828114/" target="_blank" id="linkedin"></a>
-    <a class="contact-button" href="https://docs.google.com/document/d/11FVutbAqGlW-ed21noWJjcvyhz3PD-tlZCktaGxMQfU/edit?usp=sharing" target="_blank" id="google"></a>
+    <a class="contact-button" href="https://codepen.io/ivanr553/pens/public/" target="_blank" id="codepen"></a>
+    <a class="contact-button" href="https://docs.google.com/document/d/11FVutbAqGlW-ed21noWJjcvyhz3PD-tlZCktaGxMQfU/edit?usp=sharing" target="_blank" id="resume"></a>
+  </div>
+
+
+  <div class="bar" id="bottom-bar">
     <div id="signature">Created by Ivan Raffucci</div>
   </div>
 </section>

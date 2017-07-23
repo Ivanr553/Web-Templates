@@ -18,7 +18,7 @@ function showCarla() {
     "background-color" : "rgba(0, 0, 0, 0.8)",
     "color" : "rgb(220, 220, 220)"
   })
-  document.getElementById("display").setAttribute("onclick", "openCarla()")
+  // document.getElementById("display").setAttribute("onclick", "openCarla()")
 }
 
 function showJk() {
@@ -29,7 +29,7 @@ function showJk() {
     "background-color" : "rgba(0, 0, 0, 0.8)",
     "color" : "rgb(220, 220, 220)"
   })
-  document.getElementById("display").setAttribute("onclick", "openJk()")
+  // document.getElementById("display").setAttribute("onclick", "openJk()")
 }
 
 function showTokiwa() {
@@ -37,10 +37,10 @@ function showTokiwa() {
     "background-image" : "url('./images/tokiwa.jpg')"
   })
   $("#info-content").css({
-    "background-color" : "rgba(255, 255, 255, 0.3)",
+    "background-color" : "rgba(255, 255, 255, 0.6)",
     "color" : "rgb(0, 0, 0)"
   })
-  document.getElementById("display").setAttribute("onclick", "openTokiwa()")
+  // document.getElementById("display").setAttribute("onclick", "openTokiwa()")
 }
 
 function showRaincheck() {
@@ -51,7 +51,7 @@ function showRaincheck() {
     "background-color" : "rgba(0, 0, 0, 0.8)",
     "color" : "rgb(220, 220, 220)"
   })
-  document.getElementById("display").setAttribute("onclick", "openRaincheck()")
+  // document.getElementById("display").setAttribute("onclick", "openRaincheck()")
 }
 
 //Function for links
@@ -90,3 +90,21 @@ $(document).ready(function() {
   //Jquery for the information of the projects section
   // $("#info-icon").
 })
+
+
+//Animations for info-content of projects section
+function moveContentUp() {
+  $("#info-content").css({
+    "animation" : "move-up 1.5s forwards"
+  })
+
+  setTimeout(function(){document.getElementById("display").setAttribute("onclick", "moveContentDown()")}, 1500)
+}
+
+function moveContentDown() {
+  $("#info-content").css({
+    "animation" : "move-down 1s forwards"
+  })
+  document.getElementById("info-content").setAttribute("onclick", "moveContentUp()")
+  document.getElementById("display").setAttribute("onclick", "")
+}
